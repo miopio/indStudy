@@ -42,7 +42,7 @@ for(j in 2:ll){
                             'LastName' = coauthors$LastName, 'Initials' = coauthors$Initials,
                             'order'=coauthors$order, 'Affiliation' = coauthors$affiliation))
 }
-write.table(coa,file=paste(i, "-authors.csv", sep=""), row.names=FALSE, col.names=TRUE, quote=FALSE)
+write.table(coa,file=paste(i, "-authors.csv", sep=","), row.names=FALSE, col.names=TRUE, quote=TRUE)
 
 #MESH TERMS TABLE
 mesh_terms <- data.frame(Mesh(records)[[1]])
@@ -59,5 +59,5 @@ for(k in 2:ll){
   mesh<- rbind(mesh, data.frame('pmid'=mesh_terms$pmid, 'mesh'=mesh_terms$Heading)))
   }
   
-write.table(mesh,file=paste(i, "-mesh.csv", sep=""), row.names=FALSE, col.names=TRUE, quote=FALSE)
+write.table(mesh,file=paste(i, "-mesh.csv", sep=","), row.names=FALSE, col.names=TRUE, quote=TRUE)
 }
