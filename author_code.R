@@ -17,7 +17,7 @@ for(i in test_titles){
                      'title'=ArticleTitle(records),
                      'journal'=Title(records), 
                      'country'=Country(records))
-  write.table(data, file=paste(i, "-data.csv", sep=""), row.names=FALSE, col.names=TRUE, quote=FALSE)
+  write.table(data, file=paste(i, "-data.csv", sep=","), row.names=FALSE, col.names=TRUE, quote=TRUE)
 
 
 #AUTHORS AND AFFILIATIONS TABLE
