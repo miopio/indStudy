@@ -1,0 +1,24 @@
+{
+  "name": "ind-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sketch.js",
+  "scripts": {
+    "start": "http-server . -a localhost -p 8000 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miopio/indStudy.git"
+  },
+  "author": "Mio Akasako",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miopio/indStudy/issues"
+  },
+  "homepage": "https://github.com/miopio/indStudy#readme",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "intersection-observer": "^0.6.0",
+    "scrollama": "^2.0.0"
+  }
+}
