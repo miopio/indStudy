@@ -56,18 +56,35 @@ function setup() {
     strokeWeight(2);
     noFill();
     stroke(255, 204, 100);
-    circle(1000, 600, total_fem[i]);
+    //circle(1000, 600, total_fem[i]);
+    circle(1000, 600, 100);
+    circle(1000, 600, 200);
+    circle(1000, 600, 300);
+    circle(1000, 600, 400);
     console.log(total_fem[i]);
     //50% and 100% circles
     stroke('red');
     circle(1000,600,1000);
-    circle(1000,600, 500);
+    //circle(1000,600, 500);
     //stroke('orange');
     //triangleSimple(500, 1300, total_ppl[i]/300, total_ppl[i]/300);
     stroke('orange');
-    triangleSimple(400, 2350, paper_count[i]/40, paper_count[i]/40);
+    //triangleSimple(400, 2350, paper_count[i]/40, paper_count[i]/40);
     stroke('orange');
-    triangleSimple(400, 2350, paper_count[74]/40, paper_count[74]/40);
+    //triangleSimple(400, 2350, paper_count[74]/40, paper_count[74]/40);
+    triangleSimple(400, 2350, 10000/40, 10000/40);
+    triangleSimple(400, 2350, 20000/40, 20000/40);
+    triangleSimple(400, 2350, 30000/40, 30000/40);
+    triangleSimple(400, 2350, 40000/40, 40000/40);
+    triangleSimple(400, 2350, 50000/40, 50000/40);
+
+    stroke('red');
+    triangleSimple(400, 2350, 1000/40, 1000/40);
+    triangleSimple(400, 2350, 2000/40, 2000/40);
+    triangleSimple(400, 2350, 3000/40, 3000/40);
+    triangleSimple(400, 2350, 4000/40, 4000/40);
+    triangleSimple(400, 2350, 5000/40, 5000/40);
+
     //triangle(250,750,total_ppl[i], total_ppl[i], 750, 750);
     stroke('black');
     textSize(36);
@@ -75,17 +92,25 @@ function setup() {
     console.log(year[i]);
     //firstauth
     stroke('green');
-    line(100, 100, 100, 100+(firstauth_ppl[i]/20));
+    //line(100, 100, 100, 100+(firstauth_ppl[i]/20));
+    line(50, 100, 50, 100+(500/20));
+    line(100, 100, 100, 100+(1000/20));
+    line(150, 100, 150, 100+(10000/20));
     //last auth
     stroke('purple');
-    line(200, 100, 200, 100+(lastauth_ppl[i]/20));
+    //line(200, 100, 200, 100+(lastauth_ppl[i]/20));
+    line(200, 100, 200, 100+(20000/20));
     //single auth
     stroke('pink');
-    line(300, 100, 300, 100+(total_single[i]/20));
+    //line(300, 100, 300, 100+(total_single[i]/20));
+    line(250, 100, 250, 100+(30000/20));
     //multiple auth
     stroke('lavender');
-    line(400, 100, 400, 100+(total_multiple[i]/20));
-    save("gender_"+year[i]+".jpg");
+    //line(400, 100, 400, 100+(total_multiple[i]/20));
+    line(300, 100, 300, 100+(40000/20));
+    line(350, 100, 350, 100+(50000/20));
+    //save("gender_"+year[i]+".jpg");
+    save("legend.jpg");
   }
   console.log(year[74]);
   console.log(total_single[74]);
