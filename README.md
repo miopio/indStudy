@@ -1,34 +1,19 @@
 # indStudy
  women in neuro
 
-### data
-I've incorporated csv and tsv files of my output now (this is a small sample of n=100 from the journal Neuron). The format should be the following:
+https://neuronal.fun
 
-#### data
-- pmid
-- abstract
-- year
-- title
-- journal
-- country
+### analysis
+Includes all data-pulling, cleaning, and analyzing files (including R code, jupyter notebook)
 
-#### authors
-- pmid
-- ForeName
-- LastName
-- Initials
-- order
-- Affiliation
+### indStudy_final
+Includes image files of final output
 
-#### mesh
-- pmid
-- mesh
+### process
+Describes process
 
+### sketch
+Includes P5 code to computationally draw abstract neuron shapes, as well as the data csv files obtained from the analysis (under data)
 
-### R environments
-neuro_journals.RData: my initial environment, with the data saved as lists within the environment. The lists are organized by journal. Also this environment makes my laptop go super slow so advance warning. (JUST KIDDING THIS IS TOO BIG TO UPLOAD ON GITHUB)
-
-neuro_journals_flattened.RData: my current environment using the new flattening script
-
-### Scripts
-author_code.R: this has my script for obtaining the data in a flattened format. Theoretically I'm doing something wrong in here to make my files wonky.
+### sketches
+Includes P5 sketches for each year
